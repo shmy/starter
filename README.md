@@ -9,3 +9,11 @@
 - [x] 使用`vue-router`的`beforeEach`实现单页切换修改`document.title`。
 - [x] 使用`vuex-localstorage` 对vuex的状态持久化。
 - [x] 使用`optimize-css-assets-webpack-plugin`进行css压缩。
+### 开始使用
+```bash
+$ npm install vue-cli -g
+$ vue init shmy/starter <your-project>
+$ cd  <your-project>
+$ npm install
+$ npm run dev
+```
