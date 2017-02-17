@@ -1,0 +1,27 @@
+@import "./page-transition"
+html, body, #app
+  -webkit-tap-highlight-color: transparent
+  user-select: none
+  height: 100%
+  width: 100%
+  margin: 0
+  padding: 0
+  position: relative
+  left: 0
+  top: 0
+  font-size: 16px
+  font-family: "-apple-system", ".Helvetica", "Helvetica Neue", "Roboto", "Segoe UI", "Microsoft Yahei"
+  overflow: hidden
+body[font="pingfang"] 
+  font-family: ".Helvetica", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif
+  -webkit-font-smoothing: subpixel-antialiased
+  font-weight: 300
+.page
+  height: 100%
+  width: 100%
+  position: absolute
+  top: 0;
+  left: 0
+  will-change: transform
+  background-color: #f5f5f5
+  overflow-y: auto

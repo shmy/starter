@@ -1,0 +1,42 @@
+
+.page-enter-active, .page-leave-active
+  animation-duration: 400ms
+  animation-timing-function: ease-in-out
+// 正常进入
+.page-enter-active
+  z-index: 9998
+  animation-name: slideRL-enter
+
+@keyframes slideRL-enter 
+  from 
+    transform: translate3d(100%, 0, 0)
+  to 
+    transform: translate3d(0, 0, 0)
+// 正常离开
+.page-leave-active
+  animation-name: slideRL-leave
+
+@keyframes slideRL-leave 
+  from 
+    transform: translate3d(0, 0, 0)
+  to 
+    transform: translate3d(-30%, 0, 0)
+// 反转进入
+.transition-reverse .page-enter-active
+  animation-name: slideLR-enter
+
+@keyframes slideLR-enter 
+  from 
+    transform: translate3d(-30%, 0, 0)
+  to
+    transform: translate3d(0, 0, 0)
+// 反转退出
+.transition-reverse .page-leave-active
+  animation-name: slideLR-leave;
+  z-index: 9999
+
+@keyframes slideLR-leave 
+  from 
+    transform: translate3d(0, 0, 0)
+  to
+    transform: translate3d(100%, 0, 0)
